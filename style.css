@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+
+@font-face {
+    font-family: 'Moonget';
+    src:
+         url('assets/fonts/moon_get/moon_get-Heavy.ttf') format('truetype')
+}
+
+
+:root {
+    --jpl-red: #FF0201;
+}
+
+::selection {
+    background: var(--jpl-red);
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0C0F13;
+    font-family: 'Sulphur Point', sans-serif;
+    color: #ececec;
+    font-size: 1.7rem;
+}
+
+#navbar {
+    position: fixed;
+    z-index: 9999;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: var(--jpl-red);
+    color: white;
+}
+
+section {
+    min-height: 100vh;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+#section-00 {
+    height: 100vh;
+}
+
+.title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.title {
+    font-family: Moonget, sans-serif;
+    font-size: 7rem;
+    color: var(--jpl-red);
+}
+
+.section-content {
+    padding: 5rem;
+}
+
+.section-body {
+    width: 50vw;
+    /* margin-top: 1rem; */
+}
+
+.section-title {
+    font-family: Moonget, sans-serif;
+    font-size: 3rem;
+    color: var(--jpl-red);
+}
+
+.section-media > img {
+    /* text-align: center; */
+    width: 100%;
+    /* max-height: 60vh; */
+}
+
+.section-media > video {
+    /* text-align: center; */
+    width: 100%;
+    /* max-height: 60vh; */
+}
+
+
+
+.responsive {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+/* .responsive iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} */
+
+/* .section-media > iframe {
+    width: 100%;
+} */
+
+.section-caption {
+    margin-top: 1rem;
+}
+
+.testimonial {
+    margin: 2rem 0;
+}
+
+.quote {
+    font-size: 2rem;
+}
+
+.testimonial-author {
+    font-size: 1.5rem;
+}
+
+.section-publications {
+    font-size: 2.0rem;
+}
+
+.publication {
+    text-align: left;
+    margin: 3.5rem auto;
+}
+
+a {
+    color: #ececec;
+    text-decoration: underline;
+    text-decoration-color: var(--jpl-red);
+}
+
+a:hover {
+    color: #aaaaaa;
+}
+
+.email {
+    color: var(--jpl-red);
+    text-decoration: none;
+}
+
+.team-category > h1 {
+    /* font-size: 2rem; */
+    color: var(--jpl-red);
+    margin: 0.5rem 0;
+}
+
+.team-category h2 {
+    margin: 0.5rem 0;
+    /* font-size: 1.5rem; */
+    /* color: blue; */
+}
+
+.team-category > div {
+    margin-left: 20px;
+}
+
+.right {
+    float: right;
+}
+
+.right > .section-title {
+    text-align: right;
+    width: 100%;
+}
+
+.right > .section-body {
+    float: right;
+}
+
+.bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.copyright {
+    top: -1rem;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 2rem;
+    }
+
+    .right {
+        float: none;
+    }
+
+    .right > .section-title {
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .section-media > img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-media > video {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-body {
+        width: 100%;
+        /* text-align: justify; */
+     }
+
+    .section-caption {
+       /* margin: 0 auto; */
+       /* width: 90%; */
+       text-align: left;
+    }
+
+    .publication {
+        text-align: center;
+        /* font-size: 80%; */
+    }
+    
+    .section-team {
+        font-size: 65%;
+        overflow: auto;
+    }
+
+    /* #spoc-implementations-title {
+        font-size: 2rem;
+    } */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    .section-more-testimonials {
+        
+        font-size: 100%;
+    }
+
+    .testimonial-author {
+        font-size: 80%;
+    }
+}

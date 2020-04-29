@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SPOC - Soil Property and Object Classification Algorithm</title>
+        <link rel="icon" type="image/png" href="assets/images/icon.png">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>	
+    <body>
+        <div id="navbar">
+            <a href="#section-00">Home</a>
+            <a href="#section-01">What is SPOC</a>
+            <a href="#section-02">Why SPOC?</a>
+            <a href="#section-03">SPOC Implementations</a>
+            <a href="#section-04">SPOC-Lite</a>
+            <a href="#section-05">SPOC-HiRISE</a>
+            <a href="#section-06">People-Powered Innovation</a>
+            <a href="#section-07">Testimonials</a>
+            <a href="#section-08">More Testimonials</a>
+            <a href="#section-09">Publications</a>
+            <a href="#section-10">Team</a>
+        </div>
+        <section id="section-00">
+            <div class="section-content title-section">
+                <div>
+                    <h1 class="title">SPOC</h1>
+                    <p>A Deep Learning-based Terrain Classifier for Mars Rovers</p>
+                </div>
+                <div class="bottom-right">
+                    <img  src="assets/images/nasa-jpl-white.png" height="100" />
+                    <div class="copyright">
+                        © 2020 California Institute of Technology. <br />
+                        U.S. Government sponsorship acknowledged.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-01">
+            <div class="section-content" >
+                <h1 class="section-title">What is SPOC?</h2>
+                <div class="section-body">
+                    <div class="section-media">
+                        <img src="assets/images/sidebyside.png" width="960px" /> 
+                    </div>
+                    <div class="section-caption">
+                        Like on Earth, the mobility of Mars rovers is highly sensitive to terrain type. SPOC (which stands for <u>Soil Property and Object Classification</u>) is a class of software capabilities that utilizes machine learning to classify terrain types from imagery.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-02">
+            <div class="section-content right">
+                <h1 class="section-title">Why SPOC?</h2>
+                <div class="section-body">
+                    <div class="section-media">
+                        <video width="960px" controls autoplay loop muted>
+                            <source src="assets/videos/stuck-in-sand.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="section-caption">
+                        Terrain has been a major source of risk for Mars rovers. Spirit was embedded in sand and ended its mission. Opportunity and Curiosity also have experiences of getting stuck in sand, although they were able to escape.
+                        <br /><br />
+                        SPOC’s autonomous terrain classification capability helps human rover drivers on Earth, as well as on-board algorithms, to drive safely on the red planet.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-03">
+            <div class="section-content">
+                <h1 class="section-title"><span id="spoc-implementations-title">SPOC Implementations</span></h2>
+                <div class="section-body">
+                    <div class="section-media">
+                        <img src="assets/images/implementations.png" width="960px" /> 
+                    </div>
+                    <div class="section-caption">
+                        SPOC is a family of algorithms.
+                        <br /><br />
+                        SPOC-HiRISE and SPOC-NAVCAM are based on deep convolutional neural networks, and are intended for use on ground operations. SPOC-Lite and SPOC-HPSC/SNPE are intended for on-board deployment, with SPOC-Lite employing a simpler ML model runnable on CPUs, while SPOC-HPSC/SNPE are based on deep learning and use GPUs.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-04">
+            <div class="section-content right">
+                <h1 class="section-title">SPOC-Lite</h2>
+                <div class="section-body">
+                    <div class="section-media">
+                        <video width="960px" controls="controls" autoplay loop muted>
+                            <source src="assets/videos/lite.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="section-caption">
+                        SPOC-Lite is an on-board terrain classifier compatible with a RAD750-class CPU. Taking monaural images as an input, it outputs the probability of sand on the image. 
+                        <br /><br /> 
+                        SPOC-Lite software is open-source, and is available <a href="https://github.com/nasa-jpl/spoc_lite" target="_blank">here</a>. The full video demonstrating SPOC-Lite can be found <a href="https://www.youtube.com/watch?v=LJXQ0-a9IJE" target="_blank">here</a>.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-05">
+            <div class="section-content">
+                <h1 class="section-title">SPOC-HiRISE</h2>
+                <div class="section-body">
+                    <div class="section-media">
+                        <video width="960px" controls autoplay loop muted>
+                            <source src="assets/videos/hirise.mov" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="section-caption">
+                        SPOC-HiRISE classifies every pixel of HiRISE imagery into 17 terrain classes at 25 cm resolution. The overall accuracy compared to human labels is more than 90%, sometimes even outperforming humans.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-06">
+            <div class="section-content right">
+                <h1 class="section-title">People-Powered Innovation</h2>
+                <div class="section-body">
+                    <div class="section-media">
+                        <img src="assets/images/ai4mars.png" width="960px" /> 
+                    </div>
+                    <div class="section-caption">
+                        Numerous volunteers over the Internet are contributing to improving SPOC by proving training data through a crowdsourcing project, <a href="https://www.zooniverse.org/projects/hiro-ono/ai4mars" target="_blank">AI4Mars</a>, which has already collected 10K+ labels on Curiosity’s NAVCAM images. Anyone on Earth can help NASA explore Mars from home. 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-07">
+            <div class="section-content">
+                <h1 class="section-title">Testimonials</h2>
+                <div class="section-body">
+                    <div class="section-media">
+                        <video width="960px" controls autoplay loop muted>
+                            <source src="assets/videos/testimonials.mp4" type="video/mp4">
+                        </video>
+                            <!-- https://youtu.be/Ano1lk5oQPg -->
+                    </div>
+                    <div class="section-caption">
+                        Hear from three members of the M2020 team about SPOC's ability to aid both engineers and scientists on Mars missions. Find the video on YouTube <a href="https://www.youtube.com/watch?v=Ano1lk5oQPg" target="_blank">here</a>.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-08">
+            <div class="section-content right">
+                <h1 class="section-title">More Testimonials</h2>
+                <div class="section-body">
+                    <div class="section-more-testimonials">
+                        <div class="testimonial">
+                            <p class="quote">"Drones, and autonomous robots more generally, need to be able to understand the environment around them. Deep learning and semantic segmentation are key tools that make this happen, and my work on SPOC with these technologies helped lay the foundation for the projects I'm working on today."</p><span class="testimonial-author">- Ryan Kennedy, Skydio (Former 347 and a SPOC member)</span>
+                        </div>
+                        <div class="testimonial">
+                            <p class="quote">"The team's work at NASA JPL focused on Martian terrain, but machine learning is at the core of autonomous driving here on Earth, too. My SPOC experience gave me the fundamentals of non-deterministic outcomes, model training, and system testing that apply to my role at Waymo, where I analyze fault protection architectures and system testing."</p><span class="testimonial-author"> - Amanda Steffy (Formerly at Waymo, currently at 382)</span>
+                        </div>
+                        <div class="testimonial">
+                            <p class="quote">"Planning optimal paths that avoid obstacles is critical for mobile robots, whether they’re on Mars or in a Galaxy Far, Far Away. Working on SPOC taught me that deep learning can be used even in highly constrained real-world applications. It has become a core part of my work at Disney."</p> <span class="testimonial-author"> - Jeremie Papon (Formerly at Waymo, currently at 382) </span>
+                        </div>
+                        <div class="testimonial">
+                            <p class="quote">"Machine Learning has the tremendous capability of bridging the gap between the macroscopic and the microscopic world. The lessons learned from SPOC still inspire our work on cancer segmentation and detection on microscope slides in pathology."</p> <span class="testimonial-author"> - Prof. Thomas Fuchs (Former 347 and a SPOC member)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-09">
+            <div class="section-content">
+                <h1 class="section-title">Publications</h2>
+                <div class="section-body">
+                    <div class="section-publications">
+                        <div class="publication">
+                            <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2016-5539" target="_blank">SPOC: Deep Learning-based Terrain Classification for Mars Rover Missions</a>
+                        </div>
+                        <div class="publication">
+                                <a href="https://www-robotics.jpl.nasa.gov/publications/Eduardo_Almeida/Data-driven%20surface%20traversability%20analysis%20for%20Mars%202020%20landing%20site%20selection.pdf" target="_blank">Data-driven surface traversability analysis for Mars 2020 landing site selection</a>
+                        </div>
+                        <div class="publication">
+                            <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2018-5419" target="_blank">Mars 2020 Surface Mission Performance Analysis: Part 2. Surface Traversability</a>
+                        </div>
+                        <div class="publication">
+                            <a href="https://www.hou.usra.edu/meetings/lpsc2017/pdf/2333.pdf" target="_blank">Characterization of Mars Rover 2020 Prospective Landing Sites Leading up to the Second Downselection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-10">
+            <div class="section-content right">
+                <h1 class="section-title">Team</h2>
+                <div class="section-body">
+                    <div class="section-team">
+                        <div class="team-category">
+                            <h1>JPL</h1>
+                            <div>
+                                <h2 style="display: inline">Lead</h2>: Hiro Ono <a class="email" href="mailto:ono@jpl.nasa.gov">ono@jpl.nasa.gov</a>
+                                <h2>Development and Testing</h2>
+                                Deegan Atha, Shreyansh Daftry, Mike Swan, Henry Leopold, Yumi Iwashita, Kyohei Otsu, Annie Didier, Tanvir Islam, Jacek Sawoniewicz, Olivier Lamarre, Chris Mattmann, Travis Brown, Sami Sahnoune
+                                <h2>M2020</h2>
+                                Matt Heverly, Erisa (Hines) Stilley, Rich Rieber, Fred Calef, Tariq Soliman
+                                <h2>MSL</h2>
+                                Jeng Yeng, Nick Tooles, Junggon Kim , Mark Maimone, Chris Roumeliotis, John Wright, Doug Alexander, Amy Culver, Vu Nguyen, Adrian Tinio, John Michael Morookian, Alex Cervantes, Bob Deen, Abigail Fraeman
+                            </div>
+                        </div>
+                        <div class="team-category">
+                            <h1>Former JPL</h1>
+                            <div>
+                                <h2>Development and Testing</h2>
+                                Brandon Rothrock (PAIGE), Thomas Fuchs (Memorial Sloan Kettering Cancer Center), Amanda Steffy (Waymo), Ryan Kennedy (Skydio), Jeremie Papon (Disney Research), Oktay Arslan (Tesla)
+                                <h2>Labeling</h2>
+                                Anthony Campbell (Brigham Young University), Hiroka Inoue (JAXA)
+                            </div>
+                        </div>
+                        <div class="team-category">
+                            <h1>External</h1>
+                            <div>
+                                Raymond Arvidson (Washington University at St. Louis), Catherine Weitz (Planetary Science Institute), David Rubin (USGS), Nathaniel Stein (California Institute of Technology)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <script>
+        // From: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</html>
