@@ -101,18 +101,12 @@ section {
 }
 
 .section-media > img {
-    /* text-align: center; */
     width: 100%;
-    /* max-height: 60vh; */
 }
 
 .section-media > video {
-    /* text-align: center; */
     width: 100%;
-    /* max-height: 60vh; */
 }
-
-
 
 .responsive {
     width: 100%;
@@ -121,15 +115,11 @@ section {
     position: relative;
 }
 
-/* .responsive iframe {
+.responsive iframe {
     position: absolute;
     width: 100%;
     height: 100%;
-} */
-
-/* .section-media > iframe {
-    width: 100%;
-} */
+}
 
 .section-caption {
     margin-top: 1rem;
@@ -172,15 +162,12 @@ a:hover {
 }
 
 .team-category > h1 {
-    /* font-size: 2rem; */
     color: var(--jpl-red);
     margin: 0.5rem 0;
 }
 
 .team-category h2 {
     margin: 0.5rem 0;
-    /* font-size: 1.5rem; */
-    /* color: blue; */
 }
 
 .team-category > div {
@@ -243,18 +230,14 @@ a:hover {
 
     .section-body {
         width: 100%;
-        /* text-align: justify; */
      }
 
     .section-caption {
-       /* margin: 0 auto; */
-       /* width: 90%; */
        text-align: left;
     }
 
     .publication {
         text-align: center;
-        /* font-size: 80%; */
     }
     
     .section-team {
@@ -262,9 +245,9 @@ a:hover {
         overflow: auto;
     }
 
-    /* #spoc-implementations-title {
+    #spoc-implementations-title {
         font-size: 2rem;
-    } */
+    }
 }
 
 @media (max-width: 600px) {
@@ -273,7 +256,6 @@ a:hover {
     }
 
     .section-more-testimonials {
-        
         font-size: 100%;
     }
 
